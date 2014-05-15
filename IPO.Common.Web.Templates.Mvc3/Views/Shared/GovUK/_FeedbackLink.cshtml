@@ -1,0 +1,6 @@
+﻿@using IPO.Common.Web.Templates.Mvc3.Models
+
+@if (ViewBag.FeedbackMethod == FeedbackMethod.MailTo)
+    {<a href="@Consts.FeedbackMailToUrl">feedback</a>}
+else
+    {<a target="_blank" class="openDialog buttonLink" data-dialog-id="feedbackDialog" data-dialog-title="" href="/feedback/1">feedback</a>}

@@ -1,0 +1,24 @@
+﻿@using System.Web.Mvc.Html
+@using IPO.Common.Web.Templates.Mvc3.Models
+
+<div class="beta-warning">
+            
+        <p>
+            <b>BETA:</b>&nbsp;
+
+            This is a new service -  
+                
+            @if (ViewBag.FeedbackMethod != FeedbackMethod.None)
+            {
+                <text>your</text>
+                    
+                @Html.Partial("~/Views/Shared/GovUK/_FeedbackLink.cshtml")
+                    
+                <text>will help us to improve it.</text>
+            }
+            
+            <a target="_blank" href="@Consts.HelpUrlBeta">Find out more about the beta phase.</a>
+
+        </p>
+
+</div>

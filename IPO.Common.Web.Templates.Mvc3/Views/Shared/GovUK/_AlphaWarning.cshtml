@@ -1,0 +1,26 @@
+﻿@using IPO.Common.Web.Templates.Mvc3.Models
+
+<div class="alpha-warning">
+            
+        <p>
+            <b>ALPHA:</b>&nbsp;
+
+            This is a prototype -  
+                
+            @if (ViewBag.FeedbackMethod != FeedbackMethod.None)
+            {
+                <text>your</text>
+                    
+                if (ViewBag.FeedbackMethod == FeedbackMethod.MailTo)
+                    {<a href="@Consts.FeedbackMailToUrl">feedback</a>}
+                else
+                    {<a target="_blank" class="openDialog buttonLink" data-dialog-id="feedbackDialog" data-dialog-title="" href="/feedback/1">feedback</a>}
+                    
+                <text>will help us to improve it.</text>
+            }
+
+            <a href="@Consts.HelpUrlAlpha">Find out more</a>
+
+        </p> 
+
+</div>
